@@ -19,6 +19,7 @@ const hrTag = document.getElementById("hrTag");
 const table1Con = document.getElementById("table1Con");
 const table2Vio = document.getElementById("table2Vio");
 const errorMsg = document.getElementById("errorMsg");
+const downloadTemplate=document.getElementById("downloadTemplate");
 
 // Event listeners
 searchBtn.addEventListener("click", printVal);
@@ -101,11 +102,11 @@ function printVal() {
 
             if (flexCheckDefault.checked) {
                 const data1 = [
-                    ["Shh-125", "Lorem Account"],
-                    ["DD-125", "Cara grteon"]
+                    ["MR", "1045","Archived"," 04/22/1994"],
+                    ["MR", "1045","Archived","04/22/1994"]
                 ];
                 table2Vio.classList.remove("d-none");
-                table2.innerHTML = generateTable(data1, ["S.No.", "Description"]);
+                table2.innerHTML = generateTable(data1, ["VIOLATION_CATEGORY", "CONTAMINANT_CODE","VIOLATION_STATUS","VIOL_LAST_REPORTED"]);
             }
         }
 
@@ -151,6 +152,7 @@ function submitPassword() {
         uploadBox.classList.remove("d-none");
         uploadData.classList.remove("d-none");
         downloadData.classList.remove("d-none");
+        downloadTemplate.classList.remove("d-none");
     } else {
         pTag.innerText = "You have entered the wrong Password!";
         setTimeout(() => { pTag.innerText = ""; }, 3000);
