@@ -147,7 +147,7 @@ async function downloadAndProcessCSVs(url) {
     const processFiles = [
       { name: 'SDWA_GEOGRAPHIC_AREAS.csv', fields: ['PWSID', 'STATE_SERVED', 'CITY_SERVED'], addZipcode: true },
       { name: 'SDWA_LCR_SAMPLES.csv', fields: ['PWSID', 'SAMPLE_LAST_REPORTED_DATE', 'CONTAMINANT_CODE', 'RESULT_SIGN_CODE', 'SAMPLE_MEASURE', 'UNIT_OF_MEASURE'] },
-      { name: 'SDWA_VIOLATIONS_ENFORCEMENT.csv', fields: ['PWSID', 'VIOLATION_CATEGORY_CODE', 'CONTAMINANT_CODE', 'VIOLATION_STATUS','VIOL_LAST_REPORTED_DATE'] }
+      // { name: 'SDWA_VIOLATIONS_ENFORCEMENT.csv', fields: ['PWSID', 'VIOLATION_CATEGORY_CODE', 'CONTAMINANT_CODE', 'VIOLATION_STATUS','VIOL_LAST_REPORTED_DATE'] }
     ];
 
     let processedCount = 0;
