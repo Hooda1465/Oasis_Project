@@ -37,6 +37,7 @@ padding: 0px;}
   th{
     color: #0B5ED7;
   }
+  
   @media only screen and (min-width: 1200px) {
     
     .vertical {
@@ -54,4 +55,21 @@ padding: 0px;}
       border: 1px solid rgb(239, 239, 243);
       
     }
+  }
+
+  
+  #processingMessage {
+    display: none;
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  #doneMessage {
+    display: none;
+    color: green;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
   }

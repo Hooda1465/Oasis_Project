@@ -1,0 +1,28 @@
+{
+  "name": "kyle_bigquery",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --max-old-space-size=4046 server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/bigquery": "^7.9.0",
+    "@google-cloud/storage": "^7.12.1",
+    "archiver": "^7.0.1",
+    "axios": "^1.7.4",
+    "csv-parser": "^3.0.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "fast-csv": "^5.0.1",
+    "form-data": "^4.0.0",
+    "googleapis": "^140.0.1",
+    "json2csv": "^6.0.0-alpha.2",
+    "stream": "^0.0.3",
+    "unzipper": "^0.12.3"
+  },
+  "description": ""
+}
