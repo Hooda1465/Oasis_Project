@@ -15,9 +15,9 @@ const fileUrl = 'https://echo.epa.gov/files/echodownloads/SDWA_latest_downloads.
 const downloadDir = path.join(__dirname, 'downloads');
 const zipcodeFilePath = path.join(downloadDir, 'zipcodes.csv');
 
-// Serve the styles.css file
-app.get('/styles.css', (req, res) => {
-    res.sendFile(path.join(__dirname, 'styles.css'), {
+// Serve the style.css file
+app.get('/style.css', (req, res) => {
+    res.sendFile(path.join(__dirname, 'style.css'), {
         headers: {
             'Content-Type': 'text/css'
         }
