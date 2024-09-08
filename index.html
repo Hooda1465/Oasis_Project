@@ -36,7 +36,7 @@
                 <div class="row">
                     <div class="col text-center">
 
-                        <div class="d-flex justify-content-center align-items-center my-2">
+                        <div class="d-sm-flex justify-content-center align-items-center mt-2">
 
                             <div class="">
                                 <img src="Images/Logo.png" alt="Logo" style="width:200px;">
@@ -53,7 +53,7 @@
                 <!-- Process Data Section -->
                 <div class="row">
                     
-                    <div class="col-xl-6">
+                    <div class="col-xl-6 py-2 vertical" >
                         <div class="text-center">
                             <button class="btn btn-primary" id="processDataBtn">Process EPA Data</button>
                             <div id="processingMessage" style="display: none;">Processing. Please Wait...</div>
@@ -63,7 +63,7 @@
                     </div>
     
                     <!-- Admin Access Section -->
-                    <div class="col-xl-6 d-flex justify-content-center align-items-center">
+                    <div class="col-xl-6 py-2 d-flex justify-content-center align-items-center">
                         <div class="text-center">
                             <div class="d-flex justify-content-center align-items-center">
                                 <button id="adminAccessBtn" class="btn btn-primary mx-2" onclick="adminAccess()">Admin Access</button>
@@ -88,10 +88,10 @@
                     <div class="col-xl-6 d-flex justify-content-center align-items-center">
                         <div>
                             <div class="d-flex justify-content-center align-items-center">
-                                <label for="zipVal" class="form-label me-1">Enter Zip Code</label>
-                                <input id="zipVal" placeholder="Zip Code" class="form-control mx-1" type="text" style="width:120px;">
+                                <label for="zipVal" class="form-label mx-1">Enter Zip Code</label>
+                                <input id="zipVal" placeholder="Zip Code" class="form-control mx-1" type="text" style="width:100px;">
                                 <button class="btn btn-primary mx-1" id="searchZip">Search</button>
-                                <input class="form-check-input mx-1" style="width:15px;" type="checkbox" id="flexCheckDefault">
+                                <input class="form-check-input mx-2" style="width:20px; height: 20px;" type="checkbox" id="flexCheckDefault">
                                 <span>Do you want violation data</span>
                             </div>
                             <p id="errorMsg" class="text-danger pt-3"></p>
@@ -109,11 +109,11 @@
                 <div class="row">
                     <div class="col mb-1">
                         <h5 id="table1Con" class="d-none pt-1">Contamination Data:</h5>
-                        <div class="overflow-auto" style="height: 200px;">
+                        <div class="overflow-auto pe-1" style="height: 200px;">
                             <table id="table1" class="table table-bordered"></table>
                         </div>
                         <h5 id="table2Vio" class="d-none pt-2">Violation Data:</h5>
-                        <div class="overflow-auto" style="height: 100px;">
+                        <div class="overflow-auto pe-1" style="height: 100px;">
                             <table id="table2" class="table table-bordered"></table>
                         </div>
                     </div>

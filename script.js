@@ -77,12 +77,27 @@ function printVal() {
     const zipCodeVal = zipCode.value;
 
     if (zipCodeVal === "123") {
-        const data = [
-            ['PB90', 'LEAD SUMMARY', 'Lead is a toxic heavy metal...', 'Lead exposure is highly dangerous...', 'LEAD & VOC Pack'],
-            ['CU90', 'COPPER SUMMARY', 'Copper is a metal...', 'Excessive exposure can cause...', 'Anti-Scale & Heavy Metals Pack'],
-            ['2V08', '8 Regulated Phase I VOCs', '1. Benzene\n2. Carbon Tetrachloride\n...', 'This group of contaminants...', 'Chloramine & VOC Pack'],
-            ['2V07', '7 Regulated Phase I VOCs', '1. Benzene\n2. Carbon Tetrachloride\n...', 'This group of contaminants...', 'Chloramine & VOC Pack']
-        ];
+        const data =  [['PB90',
+            'LEAD SUMMARY',
+            'Lead is a toxic heavy metal that can be found in drinking water, primarily due to the corrosion of old plumbing systems, such as lead pipes, fixtures, and solder.',
+            'Lead exposure is highly dangerous, especially for children, as it can cause developmental delays, learning difficulties, and behavioral issues. In adults, lead can result in hypertension, kidney damage, and reproductive problems. Even low levels of lead in drinking water can have serious health effects, making it one of the most concerning contaminants.',
+            'LEAD & VOC Pack'],
+           
+           ['CU90',
+            'COPPER SUMMARY',
+            'Copper is a metal that can leach into drinking water primarily from the corrosion of copper pipes and plumbing fixtures.',
+            'While copper is an essential nutrient in small amounts, excessive exposure can cause gastrointestinal distress, including nausea, vomiting, and diarrhea. Long-term exposure to high levels of copper in drinking water can lead to liver and kidney damage and may cause complications for individuals with Wilson’s disease, a genetic disorder that causes copper accumulation in the body.',
+            'Anti-Scale & Heavy Metals Pack'],
+           ['2V08',
+            '8 Regulated Phase I VOCs',
+            '\t1.\tBenzene\n\t2.\tCarbon Tetrachloride\n\t3.\t1,2-Dichloroethane\n\t4.\t1,1-Dichloroethylene\n\t5.\tTrichloroethylene\n\t6.\t1,1,1-Trichloroethane\n\t7.\tVinyl Chloride\n\t8.\tTetrachloroethylene (also known as Perchloroethylene)',
+            'This group of contaminants, which includes chemicals like Benzene and Vinyl Chloride, poses serious health risks including cancer, liver and kidney damage, and nervous system effects. Long-term exposure to these VOCs can lead to chronic health issues such as organ damage and increased cancer risk. Many of these chemicals are known carcinogens, making them particularly hazardous in drinking water.',
+            'Chloramine & VOC Pack'],
+           ['2V07',
+            '7 Regulated Phase I VOCs',
+            '\t1.\tBenzene\n\t2.\tCarbon Tetrachloride\n\t3.\t1,2-Dichloroethane\n\t4.\t1,1-Dichloroethylene\n\t5.\tTrichloroethylene\n\t6.\t1,1,1-Trichloroethane\n\t7.\tVinyl Chloride\n\t8.\tTetrachloroethylene (also known as Perchloroethylene)',
+            'This group of contaminants, which includes chemicals like Benzene and Vinyl Chloride, poses serious health risks including cancer, liver and kidney damage, and nervous system effects. Long-term exposure to these VOCs can lead to chronic health issues such as organ damage and increased cancer risk. Many of these chemicals are known carcinogens, making them particularly hazardous in drinking water.',
+            'Chloramine & VOC Pack']];
 
         if (data.length > 0) {
             table1Con.classList.remove("d-none");
